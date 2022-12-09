@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Giỏ hàng</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./assets/cartstyle.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="line"></div>
+    <div class="topbar">
+        <div class="container_bar">
+            <div class="sdt">
+                Hotline: <span style="font-weight: bold;">0966164071</span>   
+            </div>
+            <div class="sign">
+                <a class="sig" href="register.html">Đăng ký</a>
+                <a class="sig" href="login.html">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mid__header">
+        <div class="container_mid">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+                <a href="#"></a>
+            </div>
+            <div class="boxsearch">
+                <form class="form_search" action="#">
+                    <input type="text" name="txttk" placeholder="Bạn đang tìm sản phẩm gì...">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+            <div href="ggg" class="cart">
+                <div class="ctn">
+                    <a href="cart.html">
+                        <div><i class="fa-sharp fa-solid fa-cart-shopping"></i><br>Giỏ hàng</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="nav__container">
+            <div class="allcate">
+               <div class="menu">Danh mục sản phẩm
+                <i class="ico-cate fa-solid fa-bars"></i>
+                <div class="subnav">
+                    <div class="subnav_ctn">
+                        <ul class="list_cate">
+                            <li class="loai"><a href="">Iphone</a></li>
+                            <li class="loai"><a href="">Oppo</a></li>
+                            <li class="loai"><a href="">Xiaomi</a></li>
+                            <li class="loai"><a href="">Samsung</a></li>
+                            <li class="loai"><a href="">Realme</a></li>
+                            <li class="loai"><a href="">Asus</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="catalog">
+                <ul class="list_nav">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="confirm.html">Lịch sử đặt hàng</a></li>
+                    <li><a href="checkout.html">Thanh toán</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>      
+    </div>
+    <div class="locate">
+        <div class="locate_ctn">
+            <span>Trang chủ 
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i> 
+                Giỏ hàng</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container--cart">
+            <form action="#" method="GET" id="my_form"></form>
+            <table class="tb_gh">
+                <thead>
+                    <tr>
+                        <th style="width: 17%">Ảnh sản phẩm</th>
+                        <th style="width: 30% ">Tên sản phẩm</th>
+                        <th style="width: 10%">Đơn giá</th>
+                        <th style="width: 9%">Số lượng</th>
+                        <th style="width: 12%">Thao tác</th>
+                        <th style="width: 14%">Thành tiền</th>
+                        <th style="width: 10%"><input class ="btn_del"  type="submit" form="my_form"
+                            value="xoá" name="btn-cb-del">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                        <tr>
+                            <td class="td--img" data-th="Ảnh sản phẩm">
+                                <img class="img_book" src="https://cdn.tgdd.vn/Products/Images/42/267212/Samsung-Galaxy-S21-FE-vang-600x600.jpg" alt="">
+                            </td>
+                            <td class="name_book" data-th="Tên sản phẩm">Samsung Galaxy S21 FE 5G (8GB/256GB)</td>
+                            <td data-th="Đơn giá">100000đ</td>
+                            <td data-th="Số lượng">
+                                <input type="number" value="1" min="0">
+                            </td>
+                            <td data-th="Thao tác">
+                                <a class="tic" href="#">
+                                Cập nhật </a>
+                                <a class="tac" href="">Xoá</a>
+                            </td>
+                            <td class="sum" data-th="Thành tiền">10000đ</td>
+                            <td data-th=""><input style="cursor: pointer;" type="checkbox" form="my_form"
+                                class="Check-box" name="cb-del"
+                                value=></td>
+                        </tr>
+                        <tr>
+                            <td class="td--img" data-th="Ảnh sản phẩm">
+                                <img class="img_book" src="https://cdn.tgdd.vn/Products/Images/42/267212/Samsung-Galaxy-S21-FE-vang-600x600.jpg" alt="">
+                            </td>
+                            <td class="name_book" data-th="Tên sản phẩm">Samsung Galaxy S21 FE 5G (8GB/256GB)</td>
+                            <td data-th="Đơn giá">100000đ</td>
+                            <td data-th="Số lượng">
+                                <input type="number" value="1" min="0">
+                            </td>
+                            <td data-th="Thao tác">
+                                <a class="tic" href="#">
+                                Cập nhật </a>
+                                <a class="tac" href="">Xoá</a>
+                            </td>
+                            <td class="sum" data-th="Thành tiền">10000000đ</td>
+                            <td data-th=""><input style="cursor: pointer;" type="checkbox" form="my_form"
+                                class="Check-box" name="cb-del"
+                                value=></td>
+                        </tr>
+                        <tr>
+                            <td class="td--img" data-th="Ảnh sản phẩm">
+                                <img class="img_book" src="https://cdn.tgdd.vn/Products/Images/42/267212/Samsung-Galaxy-S21-FE-vang-600x600.jpg" alt="">
+                            </td>
+                            <td class="name_book" data-th="Tên sản phẩm">Samsung Galaxy S21 FE 5G (8GB/256GB)</td>
+                            <td data-th="Đơn giá">100000đ</td>
+                            <td data-th="Số lượng">
+                                <input type="number" value="1" min="0">
+                            </td>
+                            <td data-th="Thao tác">
+                                <a class="tic" href="#">
+                                Cập nhật </a>
+                                <a class="tac" href="">Xoá</a>
+                            </td>
+                            <td class="sum" data-th="Thành tiền">10000000đ</td>
+                            <td data-th=""><input style="cursor: pointer;" type="checkbox" form="my_form"
+                                class="Check-box" name="cb-del"
+                                value=></td>
+                        </tr>
+                        <tr class="sumall">
+                            <td colspan="7">
+                                <div class="tgtac__ctn">
+                                    <div class="thaotac">
+                                        <a href="index.html" class="continue">Tiếp tục mua hàng</a>
+                                    </div>
+                                    <div class="in4">
+                                        <p style="color: orangered;font-weight: bold;">Tất cả(3)</p>
+                                        Tổng thanh toán: <span style="font-weight: bold;">2000000đ</span>
+                                    </div>
+                                    <div class="xacnhan">
+                                        <a href="confirm.html" class="confirm">Xác nhận đặt hàng</a>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                     
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_ctn">
+            <div class="footer_top">
+                <div>
+                    <h3>GIỚI THIỆU SHOP</h3>
+                    <p>Riley Shop: Chuyên điện thoại chính hãng</p>
+                </div>
+                <div>
+                    <h3>DANH MỤC SẢN PHẨM</h3>
+                    <a href="#">Chính sách thanh toán</a>
+                    <a href="#">Chính sách vận chuyển</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách bảo hành</a>
+                </div>
+                <div>
+                    <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                    <a href="#">Trung Tâm Trợ Giúp</a>
+                    <a href="#">Hướng Dẫn Mua Hàng</a>
+                </div>
+                <div>
+                    <img src="./images/bct.png" alt="">
+                </div>
+            </div>
+            <div class="footer_bottom">
+               <p> © Bản quyền thuộc về Riley Shop | Cung cấp bởi Sapo</p>
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</body>
+</html>

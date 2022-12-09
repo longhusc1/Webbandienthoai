@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Thanh toán</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="./assets/checkoutstyle.css">
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="left">
+            <div class="lctn">
+                <div class="header">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="inp">
+                    <div class="infor_user">
+                        <h1>Thông tin nhận hàng</h1>
+                        <span class="label">Email</span><input type="text">
+                        <span class="label">Họ và tên</span><input type="text">
+                        <span class="label">Số điện thoại</span><input type="text">
+                        <span class="label">Địa chỉ</span><input type="text">
+
+                    </div>
+                
+                    <div class="check">
+                        <h1>Vận chuyển</h1>
+                        <div class="transport">
+                            <div class="trans" style="border-bottom: 1px solid #ccc;">
+                                <input type="radio" name="" id="">
+                                <h3>Giao hàng nội thành HCM</h3>
+                                <h4>20000đ</h4>
+                            </div>
+                            <div class="trans">
+                                <input type="radio" name="" id="">
+                                <h3>Giao hàng ngoại thành HCM</h3>
+                                <h4>20000đ</h4>
+                            </div>
+                        </div>
+                        <h1 style="margin-top: 1rem;">Thanh toán</h1>
+                        <div class="transport">
+                            <div class="trans">
+                                <input type="radio" name="" id="">
+                                <h3>Thanh toán khi giao hàng (COD) HCM</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rctn">
+                <h1>Đơn hàng (1 sản phẩm)</h1>
+                <div class="image-sach">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/267212/Samsung-Galaxy-S21-FE-vang-600x600.jpg" alt="">
+                    <span>SAMSUNG GALAXY S21 FE 5G (8GB/256GB)</span>
+                </div>
+                <div class="discount">
+                    <input type="text" placeholder="Nhập mã giảm giá">
+                    <button>Áp dụng</button>
+                </div>
+                <div class="money">
+                    <div class="ml">
+                        <h2>Tạm tính</h2>
+                        <h2>Phí vận chuyển</h2>
+                    </div>
+                    <div class="mr">
+                        <h2>10.000.000đ</h2>
+                        <h2>20.000đ</h2>
+                    </div>
+                </div>
+                <div class="sum">
+                    <div class="back">
+                        <h2>Tổng cộng</h2>
+                        <a href="cart.html">Quay về giỏ hàng</a>
+                    </div>
+                    <div class="out">
+                        <h2>10.020.000đ</h2>
+                        <button>Đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
